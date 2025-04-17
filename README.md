@@ -8,6 +8,7 @@ Built with HTML, CSS, and JavaScript, this project features:
 -  transition effects
 -  and magical vibes for a charming adventure.
 
+---
 
 ## How to Play
 1. You're lost in the Magic Forest 🌳✨
@@ -18,9 +19,9 @@ Built with HTML, CSS, and JavaScript, this project features:
 
 ## Play Now
 - GitHub Pages: [Play here](https://daniamorimdesa.github.io/MagicForestAdventure/)
-- CodePen: [View on CodePen](https://codepen.io/daniamorimdesa/pen/XXXXXXX)
+- CodePen: [View on CodePen](https://codepen.io/daniamorimdesa/pen/dPPbeJN)
 
-
+---
 
 ## Technologies
 - **HTML5** – Structure of the game
