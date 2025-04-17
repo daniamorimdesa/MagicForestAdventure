@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Magic Forest Adventure</title>
+	<!-- Link to the external CSS stylesheet -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<!-- Transition overlay shown between rounds -->
+	<div id="transition-overlay" class="hidden">
+		<p id="transition-text"></p>
+	</div>
+
+	<!-- Start screen with a button to begin the game -->
+	<div class="container" id="startScreen">
+		<button class="start-button" onclick="startGame()">Start Game</button>
+	</div>
+
+	<!-- Main game screen, hidden by default -->
+	<div class="container hidden" id="gameScreen">
+
+		<!-- Instructions shown at the beginning of the game -->
+		<div id="instructions" class="instructions-box">
+			<p>
+				Welcome to the Magic Forest!<br><br>
+				You have 3 rounds to choose one of the 3 mysterious paths.
+				If your choice is lucky, you’ll pass safely.
+				But beware — a wizard may block your way and send you back!<br><br>
+				Reach the end to discover the magic that awaits you.
+			</p>
+		</div>
+
+		<!-- Button to proceed after reading the instructions -->
+		<div id="letsGoBtnContainer">
+			<button id="letsGoBtn" onclick="hideInstructions()">Let's Go!</button>
+		</div>
+
+		<!-- Round header and choice buttons (initially hidden) -->
+		<h2 id="roundText" class="hidden">Round 1: Choose a path</h2>
+		<div class="choices hidden">
+			<button onclick="playRound(1)">Path 1</button>
+			<button onclick="playRound(2)">Path 2</button>
+			<button onclick="playRound(3)">Path 3</button>
+		</div>
+
+		<!-- Message area to show result of the player's choice -->
+		<p id="message"></p>
+	</div>
+
+	<!-- End screen displayed after the game finishes -->
+	<div class="container hidden full-screen" id="endScreen">
+		<div class="overlay-text">
+			<h2 id="endMessage"></h2>
+
+			<!-- Buttons to restart the game or return to the start screen -->
+			<div class="button-group">
+				<button id="playAgainBtn" onclick="restartGame()" class="hidden">PLAY AGAIN</button>
+				<button onclick="backToStart()">RETURN</button>
+			</div>
+		</div>
+
+		<!-- Image shown at the end of the game -->
+		<img id="endImage" src="" alt="">
+	</div>
+
+	<!-- Link to the external JavaScript file -->
+	<script src="./script.js"></script>
+
+</body>
+
+</html>

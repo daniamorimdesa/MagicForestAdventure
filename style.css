@@ -1,0 +1,233 @@
+/* Import a retro-style pixel font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* General layout and background settings */
+html,
+body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family: "Press Start 2P", cursive;
+	text-align: center;
+	background: url("https://i.imgur.com/3FoCI0S.gif") no-repeat center center fixed;
+	background-size: cover;
+	color: black;
+}
+
+/* Base container style used in all screens */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 75vh;
+}
+
+/* Utility class to hide elements */
+.hidden {
+	display: none;
+}
+
+/* Styling for path choice buttons */
+.choices button {
+	background-color: #fff;
+	border: 4px solid #000;
+	box-shadow: 4px 4px 0 #000;
+	font-family: "Press Start 2P", cursive;
+	font-size: 14px;
+	padding: 15px 25px;
+	margin: 10px;
+	cursor: pointer;
+	transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Hover effect for choice buttons */
+.choices button:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 6px 6px 0 #000;
+}
+
+/* Style for the main start game button */
+.start-button {
+	font-family: "Press Start 2P", cursive;
+	font-size: 16px;
+	color: black;
+	background-color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 20px 40px;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow: 4px 4px 0 #000;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for the start button */
+.start-button:hover {
+	transform: scale(1.05);
+	box-shadow: 6px 6px 0 #000;
+}
+
+/* Instructions box at the beginning of the game */
+.instructions-box {
+	background-color: white;
+	border: 4px solid black;
+	border-radius: 16px;
+	padding: 20px;
+	margin: 20px auto;
+	width: 80%;
+	max-width: 600px;
+	color: black;
+	font-size: 14px;
+	box-shadow: 4px 4px 0 #000;
+	font-family: "Press Start 2P", cursive;
+	text-align: left;
+	line-height: 1.8;
+}
+
+/* Container for the "Let's Go!" button */
+#letsGoBtnContainer {
+	margin-top: 1rem;
+}
+
+/* Style for the "Let's Go!" button */
+#letsGoBtn {
+	font-family: "Press Start 2P", cursive;
+	background-color: black;
+	color: white;
+	border: 3px solid white;
+	padding: 10px 30px;
+	cursor: pointer;
+	font-size: 12px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 0 #000;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for "Let's Go!" button */
+#letsGoBtn:hover {
+	transform: scale(1.05);
+	box-shadow: 6px 6px 0 #000;
+}
+
+/* Round text styling (e.g., "Round 1: Choose a path") */
+#roundText {
+	color: white;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+/* Full screen container for the end screen */
+.full-screen {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+/* Image displayed at the end of the game */
+#endImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: 1;
+}
+
+/* Overlay text that appears on top of the end image */
+.overlay-text {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	color: #ffcc00;
+	text-shadow: 4px 4px 0 black;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-size: 16px;
+	font-family: "Press Start 2P", cursive;
+	line-height: 1.1;
+}
+
+/* Button group used in the end screen */
+.button-group {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+/* Styling for buttons in the end screen */
+.button-group button {
+	width: 300px;
+	height: 60px;
+	padding: 16px 32px;
+	font-size: 20px;
+	font-family: "Press Start 2P", cursive;
+	font-weight: bolder;
+	color: black;
+	background-color: whitesmoke;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	box-shadow: 4px 4px 0 #000;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for buttons in the end screen */
+.button-group button:hover {
+	transform: scale(1.05);
+	box-shadow: 6px 6px 0 #000;
+}
+
+/* Transition overlay that appears between rounds */
+#transition-overlay.hidden {
+	display: none;
+}
+
+#transition-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(23, 6, 63, 0.67);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	font-size: 18px;
+	color: white;
+	font-family: "Press Start 2P", cursive;
+	padding: 30px;
+	text-align: center;
+	line-height: 1.6;
+	transition: opacity 0.5s ease;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+
+	.start-button,
+	.choices button {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	.instructions-box {
+		font-size: 10px;
+		padding: 10px;
+	}
+}
