@@ -3,7 +3,7 @@
 A whimsical path-choosing game set in a mysterious enchanted forest!  
 Built with HTML, CSS, and JavaScript, this project features animated backgrounds, transition effects, and magical vibes for a charming adventure.
 
-![Preview](https://imgur.com/a/BOScuJO)
+![Preview](https://i.imgur.com/3FoCI0S.gif)
 
 ---
 
