@@ -28,3 +28,6 @@ Built with HTML, CSS, and JavaScript, this project features:
 - **CSS3** – Custom styles, layout, and animations
 - **JavaScript** – Game logic, round system, dynamic transitions
 
+---
+Created by Daniela Amorim de Sá  
+[LinkedIn](https://www.linkedin.com/in/daniela-amorim-de-s%C3%A1-3b6234191/) • [Other Projects on CodePen](https://codepen.io/daniamorimdesa)
