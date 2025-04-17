@@ -14,7 +14,7 @@ Built with HTML, CSS, and JavaScript, this project features:
 1. You're lost in the Magic Forest 🌳✨
 2. In each round, choose 1 of 3 mysterious paths 🐾
 3. Choose wisely — a wizard may block your way and send you back!🧙
-4. Reach the end to discover the magic that awaits you.
+4. Reach the end to discover the magic that awaits you.😼
 
 
 ## Play Now
@@ -29,5 +29,10 @@ Built with HTML, CSS, and JavaScript, this project features:
 - **JavaScript** – Game logic, round system, dynamic transitions
 
 ---
-Created by Daniela Amorim de Sá  
+## Design Tools
+- **Adobe Photoshop** – Used to create and edit custom visual elements  
+- **CapCut** – Used for crafting animated scenes and transitions for game backgrounds  
+
+---
+🌙 Created by Daniela Amorim de Sá  
 [LinkedIn](https://www.linkedin.com/in/daniela-amorim-de-s%C3%A1-3b6234191/) • [Other Projects on CodePen](https://codepen.io/daniamorimdesa)
